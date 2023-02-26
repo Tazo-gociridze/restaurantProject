@@ -1,0 +1,301 @@
+.body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header{
+   
+}
+
+input [type="checkbox"]{
+
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.check{
+    position: relative;
+    display: block;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 4.5s;
+}
+
+input[type="checkbox"]:checked ~ .check{
+    background: #fff;
+    box-shadow: 0 0 0 5800px rgba(68, 42, 42, 0.328);
+}
+
+.check::before{
+    content:'' ;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.foods{
+    margin-top: 20px;
+}
+
+@keyframes icon{
+    30%{
+       
+        color: rgba(204, 33, 33, 0.623);
+    }
+
+    60%{
+       
+        color: rgba(0, 0, 0, 0.513);
+    }
+
+}
+
+.icon{
+
+   animation-name: icon;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   color: rgba(30, 31, 34, 0.705);
+   text-align: center;
+   
+}
+
+.information{
+    letter-spacing: 2px;
+}
+
+.info_links{
+    color: rgba(40, 40, 226, 0.774);
+}
+
+
+.arrow{
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    width: 50px;
+    margin-left: 47%;
+}
+
+@keyframes arrow{
+    30%{
+        transform: translateY(-70px);
+       
+    }
+    90%{
+       
+        transform: rotate(-180deg);
+    }
+
+    40%{
+        
+    } 
+}
+
+.arrow_2{
+    animation-name: arrow_2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    width: 50px;
+    margin-left: 47%;
+}
+
+@keyframes arrow_2{
+    30%{
+        transform: translateY(70px);
+       
+    }
+    90%{
+       
+        transform: rotate(180deg);
+    }
+}
+
+.dishes{
+    height: 130px;
+    background-size: cover;
+}
+
+.number{
+    font-size: 60px;
+}
+
+
+
+.dishes_mother{
+    border-right: 1px solid rgba(0, 0, 0, 0.5) ;
+    
+}
+
+.dishes{
+    transition: 0.7s;
+}
+
+.dishes:hover{
+    transform: translateY(-10px);
+   transition: all 0.7s;
+}
+
+.chef_radius{
+    border-radius: 5px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.746);
+}
+
+.read{
+    color: rgba(71, 65, 65, 0.801);
+}
+
+
+.mx{
+    margin-left: 13%;
+}
+
+.little_arrow_mother{
+    transition: 0.5s;
+}
+
+.little_arrow_mother:hover{
+        transform: translateX(7px);
+        transition: all 0.5s;
+
+}
+
+.team_button{
+    background-color: rgba(58, 54, 54, 0.671);
+    transition: all 0.5s;
+}
+
+.team_button:hover{
+background-color: rgba(24, 158, 182, 0.733);
+color: rgb(54, 32, 32);
+border: none;
+transition: all 0.5s;
+letter-spacing: 3px;
+}
+
+.linksys{
+    color: rgba(82, 70, 70, 0.719);
+    transition: 0.8s;
+}
+
+.linksys:hover{
+    color: rgba(24, 158, 182, 0.733);
+    transition: all 0.8s;
+    font-size: 40px;
+    
+}
+
+.chef{
+    animation-name: chef;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+
+ @keyframes chef{
+    20%{
+        transform: translateY(6px);
+    }
+
+    80%{
+        transform: translateY(-6px);
+       
+    }
+} 
+
+
+.chef:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(73, 68, 68, 0.89);
+}
+
+label{
+    font-size: 24px;
+    color: rgb(71, 69, 67);
+}
+
+.sign_in{
+    height: 50px;
+    color: rgba(42, 39, 39, 0.917);
+    border: 1px solid rgba(70, 65, 65, 0.644);
+    background-color: rgba(167, 48, 48, 0.287);
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+.sign_in:hover{
+    background-color: rgba(15, 138, 209, 0.671);
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+    letter-spacing: 3px;
+    
+}
+
+.company_links{
+    transition: all 0.8s;
+}
+
+.company_links:hover{
+    background-color: rgba(211, 193, 193, 0.294);
+     transform: translateY(-10px);
+     transition: all 0.8s;
+     border-radius: 10px;
+}
+
+footer{
+    
+}
+
+.subscribe{
+    height: 50px;
+    color: rgba(11, 184, 228, 0.917);
+    border: 1px solid rgba(70, 65, 65, 0.644);
+    background-color: rgb(235, 81, 20);
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+.subscribe:hover{
+    background-color: rgba(11, 184, 228, 0.917);
+    color: rgb(235, 81, 20);
+    transition: 0.7s;
+    letter-spacing: 3px;
+}
+
+.newsletter{
+    height: 50px;
+    border-radius: 0px;
+    
+}
+
+.footer_links{
+    color: rgba(250, 250, 250, 0.609);
+    letter-spacing: 3px;
+    transition: all 0.5s;
+    text-align: center;
+
+}
+
+.footer_links:hover{
+    color: rgb(235, 81, 20);
+    transition: all 0.5s;
+    letter-spacing: 2px;
+}
